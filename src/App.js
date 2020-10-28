@@ -1,18 +1,26 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+// components
+
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+import Heroes from './components/Heroes'
+import Hero from './components/Hero'
+
+import 'bulma'
 import './styles/style.scss'
 
 const App = () => (
   <BrowserRouter>
+    <Navbar />
     <Switch>
-      <Route exact path="/project-2" component={Home}/>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/Heroes" component={Heroes}/>
+      <Route exact path="/Heroes/:heroId" component={Hero}/>
     </Switch>
   </BrowserRouter>
 )
 
-const Home = () => {
-  return <h1>Hello world</h1>
-}
 
 export default App

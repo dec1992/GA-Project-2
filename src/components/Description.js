@@ -24,7 +24,7 @@ const Description = (props) => {
         <div className="title">
           Loading ...
         </div>
-        <progress className="progress is-large is-warning" max="100">60%</progress>
+        <progress className="progress is-large is-success" max="100">60%</progress>
       </div>
     </div>
   }

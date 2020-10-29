@@ -9,7 +9,8 @@ import Heroes from './components/Heroes'
 import Hero from './components/Hero'
 
 import 'bulma'
-import './styles/style.scss'
+import './styles/mystyles.scss'
+
 
 const App = () => (
   <BrowserRouter>

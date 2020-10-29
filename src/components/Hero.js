@@ -21,7 +21,7 @@ const Hero = (props) => {
         <div className="title">
           Loading ...
         </div>
-        <progress className="progress is-large is-warning" max="100">60%</progress>
+        <progress className="progress is-large is-success" max="100">60%</progress>
       </div>
     </div>
   }
@@ -31,11 +31,13 @@ const Hero = (props) => {
 
   return <div className="section">
     <div className="container">
+      <h1 className="is-title is-size-1">{hero.name}</h1>
+      <br></br>
+      <br></br>
       <div className="columns">
         <div className="column">
           <div className="conatiner">
-            <h1 className="is-title is-size-1">{hero.name}</h1>
-            <br></br>
+
             <h2 className="is-subtitle is-size-4">Appearance:</h2>
             <br></br>
             <p>Gender: {hero.appearance.gender}</p>
@@ -50,6 +52,16 @@ const Hero = (props) => {
             <p>Aliases: {hero.biography.aliases[0]}, {hero.biography.aliases[1]}, {hero.biography.aliases[2]}</p>
             <p>Place of Birth: {hero.biography.placeOfBirth}</p>
             <p>First Appearance: {hero.biography.firstAppearance}</p>
+            <h2 className="is-subtitle is-size-4">Stats:</h2>
+            <br></br>
+            <p>Speed: {hero.powerstats.speed}</p>
+            <progress className="progress  is-success" value={hero.powerstats.speed} max="100">{hero.powerstats.speed}</progress>
+            <p>Strength: {hero.powerstats.strength}</p>
+            <progress className="progress  is-success" value={hero.powerstats.strength} max="100">{hero.powerstats.strength}</progress>
+            <p>Intelligence: {hero.powerstats.intelligence}</p>
+            <progress className="progress  is-success" value={hero.powerstats.intelligence} max="100">{hero.powerstats.intelligence}</progress>
+            <p>Combat: {hero.powerstats.combat}</p>
+            <progress className="progress  is-success" value={hero.powerstats.combat} max="100">{hero.powerstats.combat}</progress>
 
           </div>
         </div>
@@ -63,20 +75,7 @@ const Hero = (props) => {
         <Description hero={hero} />
       </div>
     </div>
-    <div className="container">
-      <br></br>
-      <br></br>
-      <h2 className="is-subtitle is-size-4">Stats:</h2>
-      <br></br>
-      <p>Speed: {hero.powerstats.speed}</p>
-      <progress className="progress is-medium is-warning" value={hero.powerstats.speed} max="100">{hero.powerstats.speed}</progress>
-      <p>Strength: {hero.powerstats.strength}</p>
-      <progress className="progress is-medium is-warning" value={hero.powerstats.strength} max="100">{hero.powerstats.strength}</progress>
-      <p>Intelligence: {hero.powerstats.intelligence}</p>
-      <progress className="progress is-medium is-warning" value={hero.powerstats.intelligence} max="100">{hero.powerstats.intelligence}</progress>
-      <p>Combat: {hero.powerstats.combat}</p>
-      <progress className="progress is-medium is-warning" value={hero.powerstats.combat} max="100">{hero.powerstats.combat}</progress>
-    </div>
+
   </div>
 }
 

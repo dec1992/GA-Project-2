@@ -21,7 +21,7 @@ const Heroes = () => {
         <div className="title">
           Loading ...
         </div>
-        <progress className="progress is-large is-warning" max="100">60%</progress>
+        <progress className="progress is-large is-success" max="100">60%</progress>
       </div>
     </div>
   }
@@ -46,14 +46,14 @@ const Heroes = () => {
       <div className="columns">
         <div className="column">
           <input
-            className="input is-rounded is-warning"
+            className="input is-rounded is-success"
             placeholder="Search for a hero.."
             onChange={(event) => updateSearchText(event.target.value)}
             value={searchText}
           />
         </div>
         <div className="column">
-          <div className="select is-rounded is-warning">
+          <div className="select is-rounded is-success">
             <select
               value={heroFilter}
               onChange={(event) => updateHeroFilter(event.target.value)}>
@@ -70,7 +70,7 @@ const Heroes = () => {
     <div className="columns is-multiline is-mobile">
       {filterHeroes().map((hero, index) => {
         return <div
-          className="column is-one-third-desktop is-half-tablet is-half-mobile"
+          className="column is-one-quarter-desktop is-half-tablet is-half-mobile"
           key={index}
         >
 

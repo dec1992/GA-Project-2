@@ -27,6 +27,18 @@ const Home = () => {
     }
     return newArray
   }
+  
+  if (!heroes[1]) {
+    return <div className="section">
+      <div className="container">
+        <div className="title">
+          Loading ...
+        </div>
+        <progress className="progress is-large is-success" max="100">60%</progress>
+      </div>
+    </div>
+  }
+  
   return (
     <section className="hero is-fullheight-with-navbar is-success">
       <div className="hero-body">

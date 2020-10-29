@@ -39,10 +39,10 @@ const Home = () => {
             totalSlides={1000}
             visibleSlides={2}
           >
-            <div className="buttons">
+            {/* <div className="buttons">
               <ButtonBack className="button is-light">Back</ButtonBack>
               <ButtonNext className="button is-light">Next</ButtonNext>
-            </div>
+            </div> */}
             <Slider>
               {shuffle().map((hero, index) => {
                 return <section key={index}>

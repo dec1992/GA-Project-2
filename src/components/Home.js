@@ -18,6 +18,7 @@ const Home = () => {
 
   }, [])
 
+
   return (
     <section className="hero is-fullheight-with-navbar is-warning">
       <div className="hero-body">
@@ -25,30 +26,45 @@ const Home = () => {
           <CarouselProvider
             naturalSlideWidth={100}
             naturalSlideHeight={100}
+            interval={5000}
+            isPlaying={true}
             totalSlides={1000}
           >
+            <div className="buttons">
+              <ButtonBack className="button is-light">Back</ButtonBack>
+              <ButtonNext className="button is-light">Next</ButtonNext>
+            </div>
             <Slider>
               {heroes.map((hero, index) => {
                 return <section key={index}>
-                  <Slide index={index}>
+                  <Slide>
 
                     <Link to={`/heroes/${hero.id}`}>
-                      {hero.name}
-                      <img src={hero.images.sm}></img>
-                      {/* <div className="card">
-                      <div className="card-content">
-                        <div className="media">
-                          <div className="media-content">
-                            <h2 className="title is-4">{hero.name}</h2>
+
+
+                      <div className="card">
+                        <div className="card-content">
+                          <div className="columns is-mobile">
+                            <div className="column">
+                              <h1 className="is-title is-size-1">{hero.name}</h1>
+                              <br></br>
+                              <h2 className="is-subtitle is-size-4">Appearance:</h2>
+                              <br></br>
+                              <p>Gender: {hero.appearance.gender}</p>
+                              <p>Race: {hero.appearance.race}</p>
+                              <p>Height: {hero.appearance.height[1]}</p>
+                              <p>Weight: {hero.appearance.weight[1]}</p>
+                              <br></br>
+                              <br></br>
+                              <br></br>
+                              <div className="button is-warning is-large">See More</div>
+                            </div>
+                            <div className="column">
+                              <img src={hero.images.lg}></img>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div className="card-image">
-                        <figure className="image is-3by4">
-                          <img src={hero.images.sm} alt={hero.name} />
-                        </figure>
-                      </div>
-                    </div> */}
 
                     </Link>
 
@@ -58,11 +74,6 @@ const Home = () => {
                 </section>
               })}
             </Slider>
-            <div className="buttons">
-              <ButtonBack className="button is-light">Back</ButtonBack>
-              <ButtonNext className="button is-light">Next</ButtonNext>
-            </div>
-
           </CarouselProvider>
         </div>
 

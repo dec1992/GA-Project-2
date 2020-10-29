@@ -4,15 +4,21 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return <nav className="navbar">
     <div className="navbar-menu is-active">
-      <div className="navbar-brand">
-        <figure className="image is-128x128">
-          <img src="/images/hero-gif.gif" />
-        </figure>
-      </div>
 
-      <figure className="image">
-        <img src="/images/logo100.png" />
-      </figure>
+      <Link to="/">
+        <div className="navbar-brand">
+          <figure className="image is-128x128">
+            <img src="/images/hero-gif.gif" />
+          </figure>
+        </div>
+      </Link>
+
+      <Link to="/">
+        <figure className="image">
+          <img src="/images/logo100.png" />
+        </figure>
+      </Link>
+
 
       <div className="navbar-end">
         <div className="navbar-item">

@@ -7,7 +7,7 @@ const Navbar = () => {
   return <nav className="level">
     {/* <div className="navbar-menu is-active"> */}
 
-    <Link to="/" className="level-item has-text-centered		">
+    <Link to="/project-2/" className="level-item has-text-centered		">
       {/* <div className="level-item has-text-centered		"> */}
       <figure className="image is-128x128 heroGif level-item has-text-centered imageNavbar">
         <img src={gif} />
@@ -15,7 +15,7 @@ const Navbar = () => {
       {/* </div> */}
     </Link>
 
-    <Link to="/" className="level-item has-text-centered		">
+    <Link to="/project-2/" className="level-item has-text-centered		">
       <figure className="imageHero level-item has-text-centered imageNavbar">
         <img src={logo} />
       </figure>
@@ -28,8 +28,8 @@ const Navbar = () => {
       <div className="level-item has-text-centered">
 
         <div className="buttons ">
-          <Link className="button is-light" to="/">Home</Link>
-          <Link className="button is-success" to="/heroes">Search All Heroes</Link>
+          <Link className="button is-light" to="/project-2/">Home</Link>
+          <Link className="button is-success" to="/project-2/heroes">Search All Heroes</Link>
         </div>
       </div>
     </div>

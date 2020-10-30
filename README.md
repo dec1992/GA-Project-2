@@ -174,7 +174,7 @@ useEffect(() => {
       </div>
     </section>
  ```
-<img src="./screenshots/Homepage.png" width="400" />
+<img src="./Screenshots/Homepage.png" width="400" />
 
 ### Heroes Page Search and Filter
 - We used onChange on an input and a select field on our page in order to allow the user to search for a hero, and to filter the heroes by publisher.
@@ -198,7 +198,7 @@ function filterHeroes() {
     return arrayPublishers
   }
 ```
-<img src="../screenshots/Heroes.png" width="400" />
+<img src="./Screenshots/Heroes.png" width="400" />
 
 ### Loading Bars
 - We used if statements in various places throughout the app in order to display a loading bar while data was being fetched from the API in order to allow the page to render without error.
@@ -216,7 +216,8 @@ if (!heroes[1]) {
     </div>
   }
 ```
-<img src="./screenshots/Loading.png" width="400" />
+<img src="./Screenshots/Loading.png" width="400" />
+
 - We also used the progress bars from Bulma in order to display each hero's stats based on information from our API fetch.
 
 ```
@@ -232,7 +233,7 @@ if (!heroes[1]) {
             <p>Combat: {hero.powerstats.combat}</p>
             <progress className="progress  is-success" value={hero.powerstats.combat} max="100">{hero.powerstats.combat}</progress>
 ```
-<img src="./screenshots/Hero.png" width="400" />
+<img src="./Screenshots/Hero.png" width="400" />
 
 
 
@@ -245,13 +246,13 @@ if (!heroes[1]) {
 
 ## Screenshots
 
-<img src="./screenshots/Homepage.png" width="400" />
+<img src="./Screenshots/Homepage.png" width="400" />
 
-<img src="./screenshots/Heroes.png" width="400" />
+<img src="./Screenshots/Heroes.png" width="400" />
 
-<img src="./screenshots/Hero.png" width="400" />
+<img src="./Screenshots/Hero.png" width="400" />
 
-<img src="./screenshots/Loading.png" width="400" />
+<img src="./Screenshots/Loading.png" width="400" />
 
 
 ## Potential future features

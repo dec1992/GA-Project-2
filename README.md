@@ -10,9 +10,8 @@
 
 This is the second project of the software engineering immersive course at GA London. The assignment was to create a react-based web app to be rendered in the browser, using using react along with APIs. The project was to be completed **in paire** within **48 hours**.
 
-Given a list of options from GA, I chose to re-create the classic game **Frogger**. 
 
-You can launch the game on GitHub pages [here](https://dec1992.github.io/project-1/), or find the GitHub repo [here](https://github.com/dec1992/project-1).
+You can launch the app on GitHub pages [here](https://dec1992.github.io/project-2/), or find the GitHub repo [here](https://github.com/dec1992/project-2).
 
 ## Brief
 

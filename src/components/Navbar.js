@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../images/logo100.png'
+import gif from '../images/hero-gif.gif'
 
 const Navbar = () => {
   return <nav className="level">
@@ -8,14 +10,14 @@ const Navbar = () => {
     <Link to="/" className="level-item has-text-centered		">
       {/* <div className="level-item has-text-centered		"> */}
       <figure className="image is-128x128 heroGif level-item has-text-centered imageNavbar">
-        <img src="/images/hero-gif.gif" />
+        <img src={gif} />
       </figure>
       {/* </div> */}
     </Link>
 
     <Link to="/" className="level-item has-text-centered		">
       <figure className="imageHero level-item has-text-centered imageNavbar">
-        <img src="/images/logo100.png" />
+        <img src={logo} />
       </figure>
     </Link>
 

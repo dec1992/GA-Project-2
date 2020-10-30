@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
+.card {
+  color: #363636;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, hsl(141, 53%, 53%), rgba(0, 0, 0, 0))
+    1 100%;
+}
+.level {
+  height: 80px;
+  margin: 0;
+}
+
+.levelButton {
+  height: 10px;
+}
+
+.hero.is-success .title {
+  color: #363636;
+  font-family: "Syne Mono", monospace;
+}
+
+.card-content {
+  padding-top: 5px;
+}
+
+.heroHeader {
+  font-family: "Syne Mono", monospace;
+  font-size: 20px;
+}
+
+.hero-body {
+  padding-top: 50px;
+  color: #363636;
+  font-family: "Syne Mono", monospace;
+}
+div.section {
+  padding: 0;
+}
+
+.heroGif {
+  padding-top: 20px;
+  margin-left: 80px;
+}
+.imageHero {
+  height: 40px;
+}
+
+.divider {
+  /* minor cosmetics */
+  display: table;
+  font-size: 24px;
+  font-family: "Syne Mono", monospace;
+  color: #363636;
+  text-align: center;
+  width: 75%; /* divider width */
+  margin: 40px auto; /* spacing above/below */
+}
+.divider span {
+  display: table-cell;
+  position: relative;
+}
+.divider span:first-child,
+.divider span:last-child {
+  width: 50%;
+  top: 13px; /* adjust vertical align */
+  -moz-background-size: 100% 2px; /* line width */
+  background-size: 100% 2px; /* line width */
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.divider span:first-child {
+  /* color changes in here */
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(transparent),
+    to(#000)
+  );
+  background-image: -webkit-linear-gradient(180deg, transparent, #000);
+  background-image: -moz-linear-gradient(180deg, transparent, #000);
+  background-image: -o-linear-gradient(180deg, transparent, #000);
+  background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+  color: #000;
+  padding: 0px 5px;
+  width: auto;
+  white-space: nowrap;
+}
+.divider span:last-child {
+  /* color changes in here */
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#000),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(180deg, #000, transparent);
+  background-image: -moz-linear-gradient(180deg, #000, transparent);
+  background-image: -o-linear-gradient(180deg, #000, transparent);
+  background-image: linear-gradient(90deg, #000, transparent);
+}
+
+@media only screen and (max-width: 769px) {
+  .topDivider {
+    display: none;
+  }
+  .level {
+    height: 240px;
+    margin: 0;
+  }
+  .levelButton {
+    display: none;
+  }
+ 
+  .heroGif {
+    padding-top: 20px;
+    margin-left: 80px;
+  }
+
+  .heroGif {
+    padding-top: 20px;
+    margin-left: 0px;
+  }
+  .buttons {
+    padding-top: 20px;
+  }
+
+}

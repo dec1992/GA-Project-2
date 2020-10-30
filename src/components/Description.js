@@ -17,7 +17,7 @@ const Description = (props) => {
     fetchData()
   }, [])
 
-  
+
   if (!comicBookUrl.error) {
     return <div className="section">
       <div className="container">
@@ -32,18 +32,16 @@ const Description = (props) => {
   return <div className="container">
     <div className="columns">
       <div className="column">
-        <br></br>
-        <h2 className="is-subtitle is-size-4">Description:</h2>
-        <br></br>
+        <div className="divider"><span></span><span>{heroName}'s First Comic Appearance:</span><span></span></div>
+        <figure className="image is-3by4">
+          <img src={comicBookUrl.results.image.small_url} alt={heroName} />
+        </figure>
+      </div>
+      <div className="column"> 
+        <div className="divider"><span></span><span>Story Line</span><span></span></div>
         <p>
           {comic.results[0].deck}
         </p>
-      </div>
-      <div className="column">
-        <br></br>
-        <h2 className="is-subtitle is-size-4">{heroName}'s First Appearance:</h2>
-        <br></br>
-        <img src={comicBookUrl.results.image.small_url} alt={heroName} />
       </div>
     </div>
     <br></br>

@@ -8,7 +8,7 @@
 
 ## Overview
 
-This is the second project of the software engineering immersive course at GA London. The assignment was to create a react-based web app to be rendered in the browser, using using react along with APIs. The project was to be completed **in paire** within **48 hours**.
+This is the second project of the software engineering immersive course at GA London. The assignment was to create a react-based web app to be rendered in the browser, using using react along with APIs. The project was to be completed **in pairs** within **48 hours**.
 
 
 You can launch the app on GitHub pages [here](https://dec1992.github.io/project-2/), or find the GitHub repo [here](https://github.com/dec1992/project-2).
@@ -180,7 +180,7 @@ useEffect(() => {
 
 ### Heroes Page Search and Filter
 - We used onChange on an input and a select field on our page in order to allow the user to search for a hero, and to filter the heroes by publisher.
-- The seravh function and the filter we designed to be able to be used in conjunction with one another.
+- The search function and the filter was designed to be able to be used in conjunction with one another.
 - We wrote functions to filter the data from our array based on the selected field and the input and render the results on the page.
   
 ```

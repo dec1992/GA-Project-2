@@ -61,7 +61,7 @@ const Home = () => {
               {shuffle().map((hero, index) => {
                 return <section key={index}>
                   <Slide>
-                    <Link to={`/heroes/${hero.id}`}>
+                    <Link to={`/project-2/heroes/${hero.id}`}>
                       <div className="card">
                         <div className="card-content">
                           <div>

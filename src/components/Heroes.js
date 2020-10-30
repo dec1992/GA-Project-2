@@ -80,7 +80,7 @@ const Heroes = () => {
             className="column is-one-quarter-desktop is-half-tablet is-half-mobile"
             key={index}
           >
-            <Link to={`/heroes/${hero.id}`}>
+            <Link to={`/project-2/heroes/${hero.id}`}>
               <div className="card">
                 <div className="card-content">
                   <div className="media">

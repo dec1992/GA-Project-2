@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div className="buttons ">
           <Link className="button is-light" to="/project-2/">Home</Link>
-          <Link className="button is-success" to="/project-2/heroes">Search All Heroes</Link>
+          <Link className="button is-success" to="/project-2/heroes/">Search All Heroes</Link>
         </div>
       </div>
     </div>

@@ -56,9 +56,7 @@ Create an app that:
       <Route exact path="/Heroes" component={Heroes}/>
       <Route exact path="/Heroes/:heroId" component={Hero}/>
     </Switch>
-  </BrowserRouter>
-)
-
+  </BrowserRouter>)
 	```
 
 ### API Integration
@@ -200,7 +198,8 @@ function filterHeroes() {
     return arrayPublishers
   }
 ```
-<img src="./screenshots/Heroes.png" width="400" />
+<img src="../screenshots/Heroes.png" width="400" />
+
 ### Loading Bars
 - We used if statements in various places throughout the app in order to display a loading bar while data was being fetched from the API in order to allow the page to render without error.
 - we used the indeterminate progress bars from Bulma to create moving loading bars to indicate progress.

@@ -47,7 +47,7 @@ Create an app that:
 
 - We included a global navbar on all of the pages, using links to allow navigation around the site.
 
-  ```
+  ```js
   const App = () => (
   <BrowserRouter>
     <Navbar />
@@ -62,7 +62,7 @@ Create an app that:
 ### API Integration
 - We used Axios to fetch data from the superhero API.
 
-```
+```js
   useEffect(() => {
     axios.get('https://akabab.github.io/superhero-api/api/all.json')
       .then(resp => {
@@ -72,7 +72,7 @@ Create an app that:
 
 - We mapped the data from the returned array in order to generate a card for each hero. The cards were then displayed in a responsive grid on the page.
 
-```
+```js
 <div className="columns is-multiline is-mobile">
         {filterHeroes().map((hero, index) => {
           return <div
@@ -108,7 +108,7 @@ Create an app that:
 - We later combined this fetch with a fetch from a second API in order to return information about the first comic each hero appeared in.
 - We used async functions and await in order to manage the asynchronous nature of these API fetches.
 
-```
+```js
 useEffect(() => {
     async function fetchData() {
       const { data } = await axios.get(`https://cors-anywhere.herokuapp.com/https://comicvine.gamespot.com/api/search/?api_key=44be91bd8aa144e2b56b0202f49e378ccc9f6ff8&format=json&query=${heroName}&limit`)
@@ -125,7 +125,7 @@ useEffect(() => {
 - We adjusted parameters of the component in order to format the information from our fetch into cards, to display multiple cards per screen, and to allow the carousel to rotate automatically.
 - The carousel initially displayed the heroes in the original alphabetical order of the fetched array. We wrote a function with javascript loginc in order to create a new array with a randomised order.
 
- ```
+ ```js
  <section className="hero is-medium-with-navbar is-success">
       <div className="hero-body">
         <div className="container">
@@ -181,7 +181,7 @@ useEffect(() => {
 - The search function and the filter was designed to be able to be used in conjunction with one another.
 - We wrote functions to filter the data from our array based on the selected field and the input and render the results on the page.
   
-```
+```js
 function filterHeroes() {
     const filteredHeroes = heroes.filter(hero => {
       const name = hero.name.toLowerCase()
@@ -204,7 +204,7 @@ function filterHeroes() {
 - We used if statements in various places throughout the app in order to display a loading bar while data was being fetched from the API in order to allow the page to render without error.
 - we used the indeterminate progress bars from Bulma to create moving loading bars to indicate progress.
 	
-```
+```js
 if (!heroes[1]) {
     return <div className="section">
       <div className="container">
@@ -220,7 +220,7 @@ if (!heroes[1]) {
 
 - We also used the progress bars from Bulma in order to display each hero's stats based on information from our API fetch.
 
-```
+```js
 <p>Speed: {hero.powerstats.speed}</p>
             <progress className="progress  is-success" value={hero.powerstats.speed} max="100">{hero.powerstats.speed}</progress>
 

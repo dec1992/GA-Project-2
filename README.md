@@ -31,7 +31,7 @@ Create an app that:
 - React
 - Webpack
 - Bulma
-- APIs
+- APIs ([Superhero API](https://superheroapi.com/), [Comicvine](https://comicvine.gamespot.com/api/))
 - Routers
 - Axios
 - Pure React Carousel

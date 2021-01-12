@@ -11,7 +11,7 @@
 This is the second project of the software engineering immersive course at GA London. The assignment was to create a react-based web app to be rendered in the browser, using using react along with APIs. The project was to be completed **in pairs** within **48 hours**.
 
 
-You can launch the app on GitHub pages [here](https://dec1992.github.io/project-2/heroes/), or find the GitHub repo [here](https://github.com/dec1992/project-2).
+You can launch the app on GitHub pages [here](https://baltasar.tech/project-2/), or find the GitHub repo [here](https://github.com/dec1992/GA-Project-2).
 
 ## Brief
 

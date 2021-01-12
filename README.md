@@ -11,7 +11,7 @@
 This is the second project of the software engineering immersive course at GA London. The assignment was to create a react-based web app to be rendered in the browser, using using react along with APIs. The project was to be completed **in pairs** within **48 hours**.
 
 
-You can launch the app on GitHub pages [here](https://dec1992.github.io/project-2/), or find the GitHub repo [here](https://github.com/dec1992/project-2).
+You can launch the app on GitHub pages [here](https://dec1992.github.io/project-2/heroes/), or find the GitHub repo [here](https://github.com/dec1992/project-2).
 
 ## Brief
 
@@ -254,6 +254,11 @@ if (!heroes[1]) {
 
 <img src="./Screenshots/Loading.png" width="400" />
 
+## Wins & Challenges
+
+- The biggest challenge of this project was formatting the information retrieved from the Superhero API and using it to send a request to the Comicvine API.
+
+- One of the biggest wins during this project was learning to use a CSS framework for the first time. We chose to use Bulma for this project and utilised the documentation in order to implement it correctly.
 
 ## Potential future features
 
